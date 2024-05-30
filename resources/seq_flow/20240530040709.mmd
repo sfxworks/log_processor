@@ -1,0 +1,10 @@
+
+sequenceDiagram
+    participant M as Main
+    participant LP as LogProcessor
+    participant OC as OpenAIClient
+    M->>LP: process_logs(logs)
+    LP->>LP: chunk_logs(logs)
+    LP-->>M: return chunked_logs
+    M->>OC: send_logs(chunked_logs)
+    OC-->>M: return response
