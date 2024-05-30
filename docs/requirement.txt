@@ -1,1 +1,1 @@
-Write me a python docker app that takes container logs, chunks them up in to 32k token sizes, and sends them away for processing to an openai compatible endpoint
+The log processor should automatically identify and sip all log files in the system. It should also come with deployment instructions as a k8s daemonset
